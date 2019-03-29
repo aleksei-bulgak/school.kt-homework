@@ -3,11 +3,12 @@
  */
 package by.bulgak.playground
 
-import by.bulgak.playground.Having.HavingCondition.LESS
+import by.bulgak.playground.bean.Having.LESS
+import by.bulgak.playground.bean.Join
 import kotlin.test.Test
 import kotlin.test.assertEquals
 
-class SimpleTest {
+class DslTest {
     @Test
     fun testSuccessCaseWithAllFields() {
         // given
@@ -18,9 +19,40 @@ class SimpleTest {
             from = "Students"
             orderBy = "surname"
             having {
-                field = "mark"
+                left = "mark"
                 condition = LESS
-                value = "5"
+                right = "5"
+            }
+            limit = 100
+        }
+        //then
+        assertEquals(expected, result)
+    }
+
+    @Test
+    fun testSuccessCaseWithJoin() {
+        // given
+        val expected = "SELECT id, name, surname FROM Students JOIN Teachers ON Students.teacherId = Teachers.teacherId ORDER BY surname LIMIT 100 HAVING mark < 5 ";
+        //when
+        val result = query {
+            columns = listOf("id", "name", "surname")
+            from = "Students"
+            connections = listOf(
+                    join {
+                        leftTable = "Students"
+                        rightTable = "Teachers"
+                        condition {
+                            left = "teacherId"
+                            right = "teacherId"
+                            condition = Join.EQUAL
+                        }
+                    }
+            )
+            orderBy = "surname"
+            having {
+                left = "mark"
+                condition = LESS
+                right = "5"
             }
             limit = 100
         }
@@ -122,7 +154,7 @@ class SimpleTest {
             orderBy = "surname"
             having {
                 condition = LESS
-                value = "5"
+                right = "5"
             }
             limit = 100
         }
@@ -135,7 +167,7 @@ class SimpleTest {
             from = "Students"
             orderBy = "surname"
             having {
-                field = "mark"
+                left = "mark"
                 condition = LESS
             }
             limit = 100
@@ -149,8 +181,8 @@ class SimpleTest {
             from = "Students"
             orderBy = "surname"
             having {
-                field = "mark"
-                value = "5"
+                left = "mark"
+                right = "5"
             }
             limit = 100
         }
