@@ -9,22 +9,7 @@ class Query {
     var orderBy: String = ""
     var limit: Int = 0
 
-    fun isValid() {
-        if(columns.isEmpty() || columns.filter { it.isBlank() }.isNotEmpty()) {
-            throw Exception("List of columns for return can not be empty or has blank lines")
-        }
-        if(from.isBlank()) {
-            throw Exception("From element can not be nul or empty")
-        }
-        if(orderBy.isNotBlank() && columns.filter { it.equals(orderBy) }.isEmpty()) {
-            throw Exception("Specified value for ordering $orderBy is not resented in result columns $columns")
-        }
-        if(limit < 0) {
-            throw Exception("Limit $limit should be positive integer value")
-        }
-    }
-
-    fun build(): String {
+    override fun toString(): String {
         var query = columns.joinToString(prefix = "SELECT ") { it }
                 .plus(" FROM ").plus(from)
         if (orderBy.isNotBlank()) query += " ORDER BY ".plus(orderBy)
@@ -33,8 +18,23 @@ class Query {
     }
 }
 
-fun query(request: Query.() -> Unit): String? {
+fun Query.validate() {
+    if(columns.isEmpty() || columns.any { it.isBlank() }) {
+        throw Exception("List of columns for return can not be empty or has blank lines")
+    }
+    if(from.isBlank()) {
+        throw Exception("From element can not be nul or empty")
+    }
+    if(orderBy.isNotBlank() && columns.none { it.equals(orderBy) }) {
+        throw Exception("Specified value for ordering $orderBy is not resented in result columns $columns")
+    }
+    if(limit < 0) {
+        throw Exception("Limit $limit should be positive integer value")
+    }
+}
+
+fun query(request: Query.() -> Unit): String {
     val query = Query().apply(request)
-    query.isValid()
-    return query.build()
+    query.validate()
+    return query.toString()
 }
