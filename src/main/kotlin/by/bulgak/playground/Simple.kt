@@ -9,26 +9,19 @@ class Query {
     var orderBy: String = ""
     var limit: Int = 0
 
-    fun isValid(): Boolean {
+    fun isValid() {
         if(columns.isEmpty() || columns.filter { it.isBlank() }.isNotEmpty()) {
             throw Exception("List of columns for return can not be empty or has blank lines")
-            //println("List of columns for return can not be empty or has blank lines")
-            //return false
         }
         if(from.isBlank()) {
             throw Exception("From element can not be nul or empty")
-            //println("From element can not be null or empty")
-            //return false
         }
         if(orderBy.isNotBlank() && columns.filter { it.equals(orderBy) }.isEmpty()) {
             throw Exception("Specified value for ordering $orderBy is not resented in result columns $columns")
-            //println("Specified value for ordering $orderBy is not resented in result columns $columns")
-            //return false
         }
         if(limit < 0) {
             throw Exception("Limit $limit should be positive integer value")
         }
-        return true
     }
 
     fun build(): String {
@@ -42,5 +35,6 @@ class Query {
 
 fun query(request: Query.() -> Unit): String? {
     val query = Query().apply(request)
-    return if(query.isValid()) query.build() else ""
+    query.isValid()
+    return query.build()
 }
