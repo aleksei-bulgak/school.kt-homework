@@ -3,6 +3,7 @@
  */
 package by.bulgak.playground
 
+import by.bulgak.playground.Having.HavingCondition.LESS
 import kotlin.test.Test
 import kotlin.test.assertEquals
 
@@ -10,12 +11,17 @@ class SimpleTest {
     @Test
     fun testSuccessCaseWithAllFields() {
         // given
-        val expected = "SELECT id, name, surname FROM Students ORDER BY surname LIMIT 100";
+        val expected = "SELECT id, name, surname FROM Students ORDER BY surname LIMIT 100 HAVING mark < 5 ";
         //when
         val result = query {
             columns = listOf("id", "name", "surname")
             from = "Students"
             orderBy = "surname"
+            having {
+                field = "mark"
+                condition = LESS
+                value = "5"
+            }
             limit = 100
         }
         //then
@@ -104,6 +110,49 @@ class SimpleTest {
             columns = listOf("id", "name", "surname")
             from = "Student"
             orderBy = "mark"
+        }
+    }
+
+    @Test(expected = Exception::class)
+    fun testWhenHavingHasEmptyField() {
+        //when
+        query {
+            columns = listOf("id", "name", "surname")
+            from = "Students"
+            orderBy = "surname"
+            having {
+                condition = LESS
+                value = "5"
+            }
+            limit = 100
+        }
+    }
+
+    @Test(expected = Exception::class)
+    fun testWhenHavingHasEmptyValue() {
+        query {
+            columns = listOf("id", "name", "surname")
+            from = "Students"
+            orderBy = "surname"
+            having {
+                field = "mark"
+                condition = LESS
+            }
+            limit = 100
+        }
+    }
+
+    @Test(expected = Exception::class)
+    fun testWhenHavingHasEmptyCondition() {
+        query {
+            columns = listOf("id", "name", "surname")
+            from = "Students"
+            orderBy = "surname"
+            having {
+                field = "mark"
+                value = "5"
+            }
+            limit = 100
         }
     }
 }
