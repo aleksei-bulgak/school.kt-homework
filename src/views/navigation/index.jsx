@@ -20,7 +20,7 @@ class Navigation extends React.Component {
           <nav className="navigation wrapper">
             <div className="navigation__logo">
               <a href="#header">
-                <img src={`${process.env.PUBLIC_URL}/images/school-logo.svg`} alt="school.kt" width={logo.width} />
+                <img src="/images/school-logo.svg" alt="school.kt" width={logo.width} />
               </a>
             </div>
             <ul className="navigation__list">

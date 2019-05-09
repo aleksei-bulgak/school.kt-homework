@@ -50,7 +50,7 @@ const Mentor = ({
     <div className="mentors__list_item mentor">
       <div
         className="mentor__avatar"
-        style={{ backgroundImage: `url(${process.env.PUBLIC_URL + avatar})` }}
+        style={{ backgroundImage: `url(${avatar})` }}
         src={avatar}
       />
       <h3 className="mentor__fullName">{`${name} ${lastName}`}</h3>
