@@ -1,0 +1,92 @@
+{
+  "slack": "https://join.slack.com/t/schoolkt/shared_invite/enQtNTUzNjEyODM5ODQ0LTdiZGM3ZGMxNDk3YmViZjMxYTcyMDk3N2VjZTIyNjMxYmM0ZWFlM2VjMGY1YmRiNWMwZjNjYWQ0ZjNjOWE4M2E",
+  "mentor": "",
+  "events": [
+    {
+      "title": "Вводная лекция",
+      "date": "20 февраля",
+      "presenter": "Кирилл Розов"
+    },
+    {
+      "title": "ООП",
+      "date": "27 февраля",
+      "presenter": "Руслан Ибрагимов"
+    },
+    {
+      "title": "Стандартная библиотека",
+      "date": "6 марта",
+      "presenter": "Сергей Крюков"
+    },
+    {
+      "title": "Функциональное программирование",
+      "date": "13 марта",
+      "presenter": "Антон Руткевич"
+    },
+    {
+      "title": "Generics",
+      "date": "20 марта",
+      "presenter": "Павел Щорс"
+    },
+    {
+      "title": "Kotlin DSL + Multiplatform",
+      "date": "27 марта",
+      "presenter": "Кирилл Розов"
+    },
+    {
+      "title": "Coroutines",
+      "date": "3 апреля",
+      "presenter": "Руслан Ибрагимов"
+    },
+    {
+      "title": "Обратная совместимость с Java",
+      "date": "10 апреля",
+      "presenter": "Сергей Крюков"
+    },
+    {
+      "title": "Экосистема Kotlin",
+      "date": "17 апреля",
+      "presenter": "Коллективный доклад"
+    }
+  ],
+  "partners": {
+    "logo": [
+      "/images/partners/juno-logo.png",
+      "/images/partners/fitbit_logo.png",
+      "/images/partners/space-logo.png",
+      "/images/partners/jetbrains-logo.svg"
+    ],
+    "config": {
+      "width": "160px"
+    }
+  },
+  "contacts": {
+    "email": "school.kt@bkug.by",
+    "social-networks": [
+      {
+        "title": "facebook",
+        "link": "#facebook",
+        "class": "facebook"
+      },
+      {
+        "title": "twitter",
+        "link": "#twitter",
+        "class": "twitter"
+      },
+      {
+        "title": "youtube",
+        "link": "#youtube",
+        "class": "youtube"
+      }
+    ]
+  },
+  "photographers": [
+    {
+      "fullName": "Маша Трасковская",
+      "link": "https://www.facebook.com/masha.traskovskaya"
+    },
+    {
+      "fullName": "Andrei Bulanau",
+      "link": "https://www.facebook.com/bavhel"
+    }
+  ]
+}

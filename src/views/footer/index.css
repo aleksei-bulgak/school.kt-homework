@@ -1,0 +1,58 @@
+:root {
+  --footer__photo-credits_item_margin: 4px;
+}
+
+.footer {
+  background-color: #0d0d0d;
+  color: #7e7e7e;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  line-height: 1.55;
+  text-align: center;
+  font-weight: 300;
+  padding: 3.75rem 0;
+}
+
+.footer__photo-credits {
+  margin: 1rem 0;
+}
+
+.footer__photo-credits_title {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.footer__photo-credits_item {
+  color: #7e7e7e;
+  text-decoration: none;
+  position: relative;
+  margin: 0 var(--footer__photo-credits_item_margin);
+}
+
+.footer__photo-credits_item:last-child::before {
+  content: "";
+  position: absolute;
+  border-left: 1px solid #b0b0b0;
+  top: 0;
+  bottom: 0;
+  left: calc(0px - var(--footer__photo-credits_item_margin));
+}
+
+.footer__photo-credits_item::after {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid #b0b0b0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.footer__copyright_item {
+  margin: 0 0;
+  display: block;
+}

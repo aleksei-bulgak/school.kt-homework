@@ -1,0 +1,50 @@
+.contacts {
+  height: 50vh;
+  background-color: #ededed;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts__title {
+  font-size: 2.625rem;
+  line-height: 1.23;
+  margin: 1rem 0;
+}
+
+.contacts__email {
+  font-size: 1.625rem;
+  line-height: 1.5;
+  font-weight: 300;
+  margin: 3rem 0;
+}
+
+.contacts__social-networks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contacts__social-networks_item {
+  padding: 0 1rem;
+}
+
+.contacts__social-networks_item {
+  width: 0.6rem;
+  height: 2.6rem;
+  line-height: 2.6rem;
+  border-radius: 50%;
+  background: #00D692;
+  text-align: center;
+  margin: 0.5rem;
+}
+
+.fa {
+  font-size: 0.8rem;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}

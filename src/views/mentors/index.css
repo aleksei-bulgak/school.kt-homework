@@ -1,0 +1,70 @@
+:root {
+  --mentor-avatar-width: 200px;
+}
+
+.mentors__container {
+  padding: var(--container-padding) 0;
+}
+
+.mentors__title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0 0;
+  text-align: center;
+}
+
+.mentors__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 5.5rem 0;
+}
+
+.mentors__list_item {
+  margin: 1rem 1rem;
+  box-sizing: border-box;
+  text-align: center;
+  width: calc(var(--mentor-avatar-width) + 20px);
+}
+
+.mentor__avatar {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: var(--mentor-avatar-width);
+  height: var(--mentor-avatar-width);
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.mentor__fullName {
+  margin: 15px 0 5px;
+}
+
+.mentor__title {
+  color: #7a7a7a;
+  font-weight: 300;
+  font-size: 14px;
+  margin: 0 0;
+}
+
+.mentors--action {
+  text-align: center;
+}
+
+.mentors--action>a {
+  color: #000000;
+  background-color: #edb42b;
+  padding: 1.2rem 4rem;
+  max-width: 220px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 30px;
+  margin: 2rem auto;
+}
+
+.mentors--action>a:hover, .mentors--action>a:active {
+  background-color: #ebc463;
+}

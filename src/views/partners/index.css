@@ -1,0 +1,28 @@
+.partners {
+  padding: var(--container-padding) 0;
+  text-align: center;
+}
+
+.partners__content {
+  margin-bottom: 5rem;
+}
+
+.partners__title {
+  font-size: 2.6rem;
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+.partners__description {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 300;
+  padding: 0 25%;
+}
+
+.parners__logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}

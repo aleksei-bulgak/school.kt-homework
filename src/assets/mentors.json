@@ -1,0 +1,52 @@
+{
+  "mentors": [
+    {
+      "avatar": "/images/mentors/maria.jpg",
+      "name": "Марыя",
+      "lastName": "Чмырова",
+      "title": "Full Stack Developer @ Itransition"
+    },
+    {
+      "avatar": "/images/mentors/aleksei.jpg",
+      "name": "Алексей",
+      "lastName": "Клещиков",
+      "title": "Backend Developer @ iTechArt Group"
+    },
+    {
+      "avatar": "/images/mentors/vladislav.jpg",
+      "name": "Владислав",
+      "lastName": "Заблоцкий",
+      "title": "Lead Java Software Developer"
+    },
+    {
+      "avatar": "/images/mentors/pechuro.jpg",
+      "name": "Илья",
+      "lastName": "Печуро",
+      "title": "Android Software Developer"
+    },
+    {
+      "avatar": "/images/mentors/ruben.jpg",
+      "name": "Оганесян",
+      "lastName": "Рубен",
+      "title": "Android Tech & Team Lead @ Kufar"
+    },
+    {
+      "avatar": "/images/mentors/sheremet.jpg",
+      "name": "Антон",
+      "lastName": "Шеремет",
+      "title": "Android Software Developer @ iTechArt"
+    },
+    {
+      "avatar": "/images/mentors/tavpeko.jpg",
+      "name": "Дмитрий",
+      "lastName": "Тавпеко",
+      "title": "Android Software Developer"
+    },
+    {
+      "avatar": "/images/mentors/Maksim_Sukhotski.jpg",
+      "name": "Максим",
+      "lastName": "Сухоцкий",
+      "title": "Android Software Developer @ life_tech"
+    }
+  ]
+}
