@@ -1,4 +1,5 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# This project was created just to memorise ReactJS.
+# NOTE: THIS IS NOT A REPLACEMENT OF REAL PAGE OF KOTLIN SCHOOL
 
 ## Available Scripts
 
