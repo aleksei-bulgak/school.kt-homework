@@ -50,7 +50,7 @@ const Lector = ({
     <div className="lectors__list_item lector">
       <div
         className="lector__avatar"
-        style={{ backgroundImage: `url(${avatar})` }}
+        style={{ backgroundImage: `url(${process.env.PUBLIC_URL + avatar})` }}
         src={avatar}
       />
       <h3 className="lector__fullName">{`${name} ${lastName}`}</h3>
