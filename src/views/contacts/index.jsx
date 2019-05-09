@@ -12,6 +12,7 @@ const Contacts = ({ contactEmail, socialNetworks }) => (
           {
             socialNetworks.map(network => (
               <div className={`${network.class} contacts__social-networks_item`}>
+                {/* eslint-disable-next-line */}
                 <a
                   href={network.link}
                   className={`fa fa-${network.class}`}
