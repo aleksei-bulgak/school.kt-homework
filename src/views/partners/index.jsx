@@ -24,7 +24,7 @@ const Partners = ({ partners, config }) => (
 
 const Partner = ({ logo, config }) => (
   <div className="parners__logos_item">
-    <img src={logo} width={config.width} alt="partner logo" />
+    <img src={process.env.PUBLIC_URL + logo} width={config.width} alt="partner logo" />
   </div>
 );
 
