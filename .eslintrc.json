@@ -6,6 +6,7 @@
   },
   "rules": {
     "jsx-a11y/anchor-has-content": "off",
+    "jsx-a11y/anchor-is-valid": "off",
     "react/jsx-filename-extension": [
       1,
       {
@@ -15,5 +16,8 @@
         ]
       }
     ]
-  }
+  },
+  "plugins": [
+    "jsx-a11y"
+  ]
 }
