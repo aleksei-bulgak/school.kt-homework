@@ -13,7 +13,7 @@ const Agenda = props => (
 
 const Description = () => (
   <section id="agenda">
-    <div className="agenda">
+    <div className="agenda" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/agenda.jpg)` }}>
       <div className="agenda__wrapper wrapper">
         <div className="agenda__lections agenda__info">
           <h3 className="agenda__info_title">

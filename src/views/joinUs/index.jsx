@@ -5,7 +5,7 @@ import './index.css';
 const JoinUs = ({ slack }) => (
   <React.Fragment>
     <section id="join-us">
-      <div className="join-us">
+      <div className="join-us" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/join-us.jpg)` }}>
         <h3 className="join-us__title">Присоединяйтесь к нашему slack</h3>
         <a
           href={slack}

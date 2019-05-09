@@ -20,7 +20,7 @@ const NextAction = () => (
 );
 
 const Header = ({ slack }) => (
-  <header id="header" className="header">
+  <header id="header" className="header" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/header.jpg)` }}>
     <h1 className="header__title">Курсы по Kotlin</h1>
     <p className="header__description">От Belarus Kotlin User Group</p>
     <p className="header__description">Первый набор окончен, присоединяйтесь к нашему slack</p>

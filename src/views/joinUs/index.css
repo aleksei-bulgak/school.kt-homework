@@ -6,7 +6,7 @@
   height: var(--join-us--content-height);
   position: relative;
   text-align: center;
-  background-image: url('/images/join-us.jpg');
+  /* background-image: url('/images/join-us.jpg'); */
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center;

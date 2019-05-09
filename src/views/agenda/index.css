@@ -9,7 +9,7 @@
   height: var(--agenda--content-height);
   position: relative;
   text-align: center;
-  background-image: url('/images/agenda.jpg');
+  /* background-image: url('/images/agenda.jpg'); */
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center;
