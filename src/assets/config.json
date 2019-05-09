@@ -64,17 +64,17 @@
     "social-networks": [
       {
         "title": "facebook",
-        "link": "#facebook",
+        "link": "https://www.facebook.com/BelarusKUG/",
         "class": "facebook"
       },
       {
         "title": "twitter",
-        "link": "#twitter",
+        "link": "https://twitter.com/BelarusKUG",
         "class": "twitter"
       },
       {
         "title": "youtube",
-        "link": "#youtube",
+        "link": "https://www.youtube.com/channel/UCj38YQRHsZ-idApaCIf_wSQ",
         "class": "youtube"
       }
     ]
