@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "95a07a5c9ae86c9fd3098fc130d5632e",
+    "revision": "aff2f81000844e0f7227167c4fefbf6b",
     "url": "/school.kt-homework/index.html"
   },
   {
-    "revision": "d89e1e3f7e04a366a6ab",
+    "revision": "979f0fe4c1dcee4a1744",
     "url": "/school.kt-homework/static/css/main.1123da1a.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/school.kt-homework/static/js/2.91beb47b.chunk.js"
   },
   {
-    "revision": "d89e1e3f7e04a366a6ab",
-    "url": "/school.kt-homework/static/js/main.8ab1a460.chunk.js"
+    "revision": "979f0fe4c1dcee4a1744",
+    "url": "/school.kt-homework/static/js/main.e93f67af.chunk.js"
   },
   {
     "revision": "bd602ff6f3c7ffb0be48",
