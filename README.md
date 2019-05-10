@@ -1,4 +1,4 @@
-# This project was created just to memorise ReactJS.
+# This project was created only to recall ReactJS.
 # NOTE: THIS IS NOT A REPLACEMENT OF REAL PAGE OF KOTLIN SCHOOL
 
 [![Build Status](https://travis-ci.org/aleksei-bulgak/school.kt-homework.svg?branch=site)](https://travis-ci.org/aleksei-bulgak/school.kt-homework)
