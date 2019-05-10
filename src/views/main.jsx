@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import Header from './header';
 import Navigaton from './navigation';
 import Intro from './intro';
@@ -64,5 +66,9 @@ const Location = ({ location }) => (
     className="meetup-location"
   />
 );
+
+Location.propTypes = {
+  location: PropTypes.objectOf(PropTypes.string).isRequired,
+};
 
 export default Main;
