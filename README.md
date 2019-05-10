@@ -1,6 +1,8 @@
 # This project was created just to memorise ReactJS.
 # NOTE: THIS IS NOT A REPLACEMENT OF REAL PAGE OF KOTLIN SCHOOL
 
+[![Build Status](https://travis-ci.org/aleksei-bulgak/school.kt-homework.svg?branch=site)](https://travis-ci.org/aleksei-bulgak/school.kt-homework)
+
 ## Available Scripts
 
 In the project directory, you can run:
