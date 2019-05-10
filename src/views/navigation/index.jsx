@@ -33,7 +33,9 @@ class Navigation extends React.Component {
               <li className="navigation__list_item">
                 <a href="#timeline">Расписание</a>
               </li>
-              <li className="navigation__list_item">Площадка</li>
+              <li className="navigation__list_item">
+                <a href="#meetup-location">Площадка</a>
+              </li>
               <li className="navigation__list_item">
                 <a href="#contacts">Контакты</a>
               </li>

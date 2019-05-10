@@ -60,7 +60,7 @@ class Main extends React.Component {
 
 const Location = ({ location }) => (
   <iframe
-
+    id="meetup-location"
     title={location.title}
     src={location.url}
     className="meetup-location"
