@@ -16,47 +16,33 @@ import lectorsInfo from '../assets/lectors.json';
 import mentorsInfo from '../assets/mentors.json';
 import config from '../assets/config.json';
 
-class Main extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      lectors: lectorsInfo.lectors,
-      mentors: mentorsInfo.mentors,
-      config: {
-        ...config,
-      },
-    };
-  }
-
-  render() {
-    const { lectors } = this.state;
-    const { mentors } = this.state;
-    const {
-      config: {
-        slack,
-        partners,
-        contacts,
-        photographers,
-        location,
-      },
-    } = this.state;
-    return (
-      <React.Fragment>
-        <Navigaton />
-        <Header slack={slack} />
-        <Intro />
-        <LectorsList lectors={lectors} />
-        <MentorsList mentors={mentors} link={config.mentor} />
-        <Agenda {...config} />
-        <Location location={location} />
-        <Partners partners={partners.logo} config={partners.config} />
-        <JoinUs slack={slack} />
-        <Contacts contactEmail={contacts.email} socialNetworks={contacts['social-networks']} />
-        <Footer photographers={photographers} />
-      </React.Fragment>
-    );
-  }
-}
+const Main = () => {
+  const { lectors } = lectorsInfo;
+  const { mentors } = mentorsInfo;
+  const {
+    slack,
+    partners,
+    contacts,
+    photographers,
+    location,
+    events,
+  } = config;
+  return (
+    <React.Fragment>
+      <Navigaton />
+      <Header slack={slack} />
+      <Intro />
+      <LectorsList lectors={lectors} />
+      <MentorsList mentors={mentors} link={config.mentor} />
+      <Agenda events={events} />
+      <Location location={location} />
+      <Partners partners={partners.logo} config={partners.config} />
+      <JoinUs slack={slack} />
+      <Contacts contactEmail={contacts.email} socialNetworks={contacts['social-networks']} />
+      <Footer photographers={photographers} />
+    </React.Fragment>
+  );
+};
 
 const Location = ({ location }) => (
   <iframe

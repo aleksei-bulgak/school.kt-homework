@@ -3,26 +3,24 @@ import PropTypes from 'prop-types';
 import './index.css';
 
 const Partners = ({ partners, config }) => (
-  <React.Fragment>
-    <section id="partners">
-      <div className="partners wrapper">
-        <div className="partners__content">
-          <h3 className="partners__title">Партнеры</h3>
-          <p className="partners__description">Спасибо следующим компаниям за поддержку School.kt</p>
-        </div>
-        <div className="parners__logos">
-          {
-            partners.map(partner => (
-              <Partner key={partner} logo={partner} config={config} />
-            ))
-          }
-        </div>
+  <section id="partners">
+    <div className="partners wrapper">
+      <div className="partners__content">
+        <h3 className="partners__title">Партнеры</h3>
+        <p className="partners__description">Спасибо следующим компаниям за поддержку School.kt</p>
       </div>
-    </section>
-  </React.Fragment>
+      <div className="parners__logos">
+        {
+          partners.map(partner => (
+            <Logo key={partner} logo={partner} config={config} />
+          ))
+        }
+      </div>
+    </div>
+  </section>
 );
 
-const Partner = ({ logo, config }) => (
+const Logo = ({ logo, config }) => (
   <div className="parners__logos_item">
     <img src={process.env.PUBLIC_URL + logo} width={config.width} alt="partner logo" />
   </div>
@@ -33,7 +31,7 @@ Partners.propTypes = {
   config: PropTypes.objectOf(PropTypes.string).isRequired,
 };
 
-Partner.propTypes = {
+Logo.propTypes = {
   logo: PropTypes.string.isRequired,
   config: PropTypes.objectOf(PropTypes.string).isRequired,
 };

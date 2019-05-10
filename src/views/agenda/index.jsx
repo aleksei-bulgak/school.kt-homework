@@ -4,10 +4,10 @@ import { Timeline, Event } from 'react-timeline-scribble';
 
 import './index.css';
 
-const Agenda = props => (
+const Agenda = ({ events }) => (
   <React.Fragment>
-    <Description {...props} />
-    <TimelineComponent {...props} />
+    <Description />
+    <TimelineComponent events={events} />
   </React.Fragment>
 );
 
@@ -59,6 +59,11 @@ const TimelineComponent = ({ events }) => (
     </div>
   </section>
 );
+
+
+Agenda.propTypes = {
+  events: PropTypes.arrayOf(PropTypes.any).isRequired,
+};
 
 TimelineComponent.propTypes = {
   events: PropTypes.arrayOf(PropTypes.any).isRequired,
