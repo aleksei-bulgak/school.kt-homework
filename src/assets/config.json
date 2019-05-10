@@ -88,5 +88,9 @@
       "fullName": "Andrei Bulanau",
       "link": "https://www.facebook.com/bavhel"
     }
-  ]
+  ],
+  "location": {
+    "url": "https://www.google.com/maps/d/embed?mid=1QEfTzas4QArOqqmfCKq12o8uTjOggVIJ",
+    "title": "EventSpace"
+  }
 }

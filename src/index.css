@@ -1,5 +1,6 @@
 :root {
   --container-padding: 130px;
+  --default--section-height: 75vh;
 }
 
 body {
@@ -27,4 +28,10 @@ body {
 
 a:hover, a:active {
   cursor: pointer;
+}
+
+.meetup-location {
+  width: 100%;
+  height: var(--default--section-height);
+  border: none;
 }

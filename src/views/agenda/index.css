@@ -1,12 +1,11 @@
 /* Agenda styles */
 
 :root {
-  --agenda--content-height: 75vh;
   --agenda--item--max-width: 600px;
 }
 
 .agenda {
-  height: var(--agenda--content-height);
+  height: var(--default--section-height);
   position: relative;
   text-align: center;
   /* background-image: url('/images/agenda.jpg'); */
@@ -32,7 +31,7 @@
 }
 
 .agenda__wrapper {
-  height: var(--agenda--content-height);
+  height: var(--default--section-height);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

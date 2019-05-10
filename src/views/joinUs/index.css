@@ -1,9 +1,5 @@
-:root {
-  --join-us--content-height: 75vh;
-}
-
 .join-us {
-  height: var(--join-us--content-height);
+  height: var(--default--section-height);
   position: relative;
   text-align: center;
   /* background-image: url('/images/join-us.jpg'); */

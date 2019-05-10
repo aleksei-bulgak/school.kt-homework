@@ -35,6 +35,7 @@ class Main extends React.Component {
         partners,
         contacts,
         photographers,
+        location,
       },
     } = this.state;
     return (
@@ -45,7 +46,7 @@ class Main extends React.Component {
         <LectorsList lectors={lectors} />
         <MentorsList mentors={mentors} link={config.mentor} />
         <Agenda {...config} />
-        <div className="todo">Map will be implemented later</div>
+        <Location location={location} />
         <Partners partners={partners.logo} config={partners.config} />
         <JoinUs slack={slack} />
         <Contacts contactEmail={contacts.email} socialNetworks={contacts['social-networks']} />
@@ -54,5 +55,14 @@ class Main extends React.Component {
     );
   }
 }
+
+const Location = ({ location }) => (
+  <iframe
+
+    title={location.title}
+    src={location.url}
+    className="meetup-location"
+  />
+);
 
 export default Main;
