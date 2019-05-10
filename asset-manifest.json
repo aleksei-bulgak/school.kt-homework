@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/school.kt-homework/static/css/main.1fe7c307.chunk.css",
+    "main.css": "/school.kt-homework/static/css/main.a1734a6f.chunk.css",
     "main.js": "/school.kt-homework/static/js/main.dbea72ea.chunk.js",
     "main.js.map": "/school.kt-homework/static/js/main.dbea72ea.chunk.js.map",
     "runtime~main.js": "/school.kt-homework/static/js/runtime~main.2f7517ac.js",
@@ -8,8 +8,8 @@
     "static/js/2.91beb47b.chunk.js": "/school.kt-homework/static/js/2.91beb47b.chunk.js",
     "static/js/2.91beb47b.chunk.js.map": "/school.kt-homework/static/js/2.91beb47b.chunk.js.map",
     "index.html": "/school.kt-homework/index.html",
-    "precache-manifest.400ecfee474585f44b4c041464ff026a.js": "/school.kt-homework/precache-manifest.400ecfee474585f44b4c041464ff026a.js",
+    "precache-manifest.f1def804244a7296da609c21491a7a70.js": "/school.kt-homework/precache-manifest.f1def804244a7296da609c21491a7a70.js",
     "service-worker.js": "/school.kt-homework/service-worker.js",
-    "static/css/main.1fe7c307.chunk.css.map": "/school.kt-homework/static/css/main.1fe7c307.chunk.css.map"
+    "static/css/main.a1734a6f.chunk.css.map": "/school.kt-homework/static/css/main.a1734a6f.chunk.css.map"
   }
 }
