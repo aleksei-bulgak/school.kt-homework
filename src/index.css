@@ -39,3 +39,20 @@ a:hover, a:active {
   height: var(--default--section-height);
   border: none;
 }
+
+@media only screen and (max-width: 1000px) {
+  :root {
+    --container-padding: 3rem;
+  }
+  p, h2, h3 {
+    box-sizing: border-box;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  :root {
+    --container-padding: 2rem;
+  }
+}

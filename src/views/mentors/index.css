@@ -54,6 +54,7 @@
 }
 
 .mentors--action>a {
+  display: inline-block;
   color: #000000;
   background-color: #edb42b;
   padding: 1.2rem 4rem;
@@ -62,9 +63,14 @@
   font-weight: 700;
   text-decoration: none;
   border-radius: 30px;
-  margin: 2rem auto;
 }
 
 .mentors--action>a:hover, .mentors--action>a:active {
   background-color: #ebc463;
+}
+
+@media only screen and (max-width: 1000px) {
+  .mentors__list {
+    margin: 1.5rem 0;
+  }
 }

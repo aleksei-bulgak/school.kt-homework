@@ -4,8 +4,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  margin-top: 6rem;
-  margin-bottom: 6rem;
+  padding: var(--container-padding) 0;
 }
 
 .intro>* {
