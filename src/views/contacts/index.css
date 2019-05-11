@@ -48,3 +48,12 @@
   text-decoration: none;
   color: white;
 }
+
+@media only screen and (max-width: 700px) {
+  .contacts__email {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 300;
+    margin: 0 0 1rem 0;
+  }
+}
