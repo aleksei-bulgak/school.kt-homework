@@ -57,7 +57,6 @@
     font-weight: 300;
     line-height: 1.55;
     word-wrap: break-word;
-    word-break: break-all;
   }
   .intro__logo>img {
     max-width: 80vw;

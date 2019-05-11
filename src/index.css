@@ -3,6 +3,10 @@
   --default--section-height: 75vh;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
