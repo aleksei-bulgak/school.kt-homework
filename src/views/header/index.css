@@ -4,6 +4,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   /* background-image: url('/images/header.jpg'); */
   background-attachment: scroll;
   background-repeat: no-repeat;
@@ -62,6 +63,7 @@ header>* {
 
 .header__next {
   bottom: 1rem;
+  left: 0;
   position: absolute;
   width: 100%;
   text-align: left;

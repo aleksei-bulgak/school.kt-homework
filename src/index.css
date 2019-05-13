@@ -36,6 +36,7 @@ a:hover, a:active {
 
 .meetup-location {
   width: 100%;
+  height: 75vh;
   height: var(--default--section-height);
   border: none;
 }

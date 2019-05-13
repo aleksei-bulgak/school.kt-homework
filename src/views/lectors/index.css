@@ -4,6 +4,7 @@
 
 .lectors__container {
   background-color: #f2f2f2;
+  padding: 130px 0;
   padding: var(--container-padding) 0;
 }
 
@@ -35,6 +36,7 @@
 }
 
 .lector__coverletter {
+  max-width: 360px;
   max-width: var(--avatar-width);
   font-weight: 300;
   font-size: 0.9rem;
@@ -45,7 +47,9 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  width: 360px;
   width: var(--avatar-width);
+  height: 360px;
   height: var(--avatar-width);
   display: inline-block;
 }

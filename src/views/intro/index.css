@@ -4,6 +4,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  padding: 130px 0;
   padding: var(--container-padding) 0;
 }
 

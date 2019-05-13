@@ -3,6 +3,7 @@
 }
 
 .mentors__container {
+  padding: 130px 0;
   padding: var(--container-padding) 0;
 }
 
@@ -18,13 +19,15 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin: 5.5rem 0;
+  -ms-flex-pack: justify;
+   margin: 5.5rem 0;
 }
 
 .mentors__list_item {
   margin: 1rem 1rem;
   box-sizing: border-box;
   text-align: center;
+  width: 220px;
   width: calc(var(--mentor-avatar-width) + 20px);
 }
 
@@ -32,6 +35,8 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  width: 200px;
+  height: 200px;
   width: var(--mentor-avatar-width);
   height: var(--mentor-avatar-width);
   display: inline-block;

@@ -31,6 +31,7 @@
   color: #7e7e7e;
   text-decoration: none;
   position: relative;
+  margin: 0 4px;
   margin: 0 var(--footer__photo-credits_item_margin);
 }
 
@@ -40,6 +41,7 @@
   border-left: 1px solid #b0b0b0;
   top: 0;
   bottom: 0;
+  left: -4px;
   left: calc(0px - var(--footer__photo-credits_item_margin));
 }
 
