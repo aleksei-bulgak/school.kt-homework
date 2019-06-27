@@ -1,19 +1,28 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import VisibilitySensor from 'react-visibility-sensor';
 import './index.css';
 
 const JoinUs = ({ slack }) => (
   <section id="join-us">
     <div className="join-us" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/join-us.jpg)` }}>
-      <h3 className="join-us__title">Присоединяйтесь к нашему slack</h3>
-      <a
-        href={slack}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="join-us__link"
-      >
-        School.kt Slack
-      </a>
+      <VisibilitySensor>
+        {
+          ({ isVisible }) => (
+            <React.Fragment>
+              <h3 className={`join-us__title ${isVisible ? 'join-us--visible' : ''}`}>Присоединяйтесь к нашему slack</h3>
+              <a
+                href={slack}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`join-us__link ${isVisible ? 'join-us--visible' : ''}`}
+              >
+                School.kt Slack
+              </a>
+            </React.Fragment>
+          )
+        }
+      </VisibilitySensor>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1280 200"

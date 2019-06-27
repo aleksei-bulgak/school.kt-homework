@@ -36,6 +36,8 @@
   font-size: 4.5rem;
   line-height: 1.17;
   max-width: 800px;
+  transform: translateY(100px);
+  transition: transform 1s;
 }
 
 .join-us__link {
@@ -48,6 +50,12 @@
   text-decoration: none;
   border-radius: 30px;
   margin: 2rem auto;
+  transform: translateY(100px);
+  transition: transform 1s;
+}
+
+.join-us--visible {
+  transform: translateY(0);
 }
 
 .join-us__link:hover, .join-us__link:active {

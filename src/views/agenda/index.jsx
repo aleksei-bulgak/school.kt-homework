@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Timeline, Event } from 'react-timeline-scribble';
+import VisibilitySensor from 'react-visibility-sensor';
 
 import './index.css';
 
@@ -15,22 +16,34 @@ const Description = () => (
   <section id="agenda">
     <div className="agenda" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/agenda.jpg)` }}>
       <div className="agenda__wrapper wrapper">
-        <div className="agenda__lections agenda__info">
-          <h3 className="agenda__info_title">
-            9
-            <br />
-            лекций
-          </h3>
-          <p>лекция проходит каждую неделю</p>
-        </div>
-        <div className="agenda__personal agenda__info">
-          <h3 className="agenda__info_title">
-            13
-            <br />
-            лекторов и менторов
-          </h3>
-          <p>самые опытные и заинтересованные разработчики</p>
-        </div>
+        <VisibilitySensor>
+          {
+            ({ isVisible }) => (
+              <div className={`agenda__lections agenda__info ${isVisible ? 'agenda__info--visible' : ''}`}>
+                <h3 className="agenda__info_title">
+                  9
+                  <br />
+                  лекций
+                </h3>
+                <p>лекция проходит каждую неделю</p>
+              </div>
+            )
+          }
+        </VisibilitySensor>
+        <VisibilitySensor>
+          {
+            ({ isVisible }) => (
+              <div className={`agenda__personal agenda__info ${isVisible ? 'agenda__info--visible' : ''}`}>
+                <h3 className="agenda__info_title">
+                  13
+                  <br />
+                  лекторов и менторов
+                </h3>
+                <p>самые опытные и заинтересованные разработчики</p>
+              </div>
+            )
+          }
+        </VisibilitySensor>
       </div>
     </div>
   </section>

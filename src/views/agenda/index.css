@@ -47,6 +47,20 @@
   box-sizing: border-box;
   max-width: 650px;
   max-width: var(--agenda--item--max-width);
+  transform: translateY(100px);
+  transition: transform 1s;
+}
+
+.agenda__lections {
+  transition-delay: 0;
+}
+
+.agenda__personal {
+  transition-delay: 0.1s;
+}
+
+.agenda__info--visible {
+  transform: translateY(0);
 }
 
 .agenda__info p {
