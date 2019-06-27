@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/school.kt-homework/static/css/main.79b30d27.chunk.css",
-    "main.js": "/school.kt-homework/static/js/main.31bd8025.chunk.js",
-    "main.js.map": "/school.kt-homework/static/js/main.31bd8025.chunk.js.map",
+    "main.css": "/school.kt-homework/static/css/main.82d1baf9.chunk.css",
+    "main.js": "/school.kt-homework/static/js/main.e0c7484c.chunk.js",
+    "main.js.map": "/school.kt-homework/static/js/main.e0c7484c.chunk.js.map",
     "runtime~main.js": "/school.kt-homework/static/js/runtime~main.2f7517ac.js",
     "runtime~main.js.map": "/school.kt-homework/static/js/runtime~main.2f7517ac.js.map",
-    "static/js/2.1d3aca71.chunk.js": "/school.kt-homework/static/js/2.1d3aca71.chunk.js",
-    "static/js/2.1d3aca71.chunk.js.map": "/school.kt-homework/static/js/2.1d3aca71.chunk.js.map",
+    "static/js/2.2be50de9.chunk.js": "/school.kt-homework/static/js/2.2be50de9.chunk.js",
+    "static/js/2.2be50de9.chunk.js.map": "/school.kt-homework/static/js/2.2be50de9.chunk.js.map",
     "index.html": "/school.kt-homework/index.html",
-    "precache-manifest.f574ca40b8101489abe585934986f271.js": "/school.kt-homework/precache-manifest.f574ca40b8101489abe585934986f271.js",
+    "precache-manifest.a7bd4388cd9573e5080879aeceeae5df.js": "/school.kt-homework/precache-manifest.a7bd4388cd9573e5080879aeceeae5df.js",
     "service-worker.js": "/school.kt-homework/service-worker.js",
-    "static/css/main.79b30d27.chunk.css.map": "/school.kt-homework/static/css/main.79b30d27.chunk.css.map"
+    "static/css/main.82d1baf9.chunk.css.map": "/school.kt-homework/static/css/main.82d1baf9.chunk.css.map"
   }
 }
