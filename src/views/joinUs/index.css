@@ -38,6 +38,7 @@
   max-width: 800px;
   transform: translateY(100px);
   transition: transform 1s;
+  transition-timing-function: ease-out;
 }
 
 .join-us__link {
@@ -51,7 +52,8 @@
   border-radius: 30px;
   margin: 2rem auto;
   transform: translateY(100px);
-  transition: transform 1s;
+  transition: transform 1.5s;
+  transition-timing-function: ease-out;
 }
 
 .join-us--visible {

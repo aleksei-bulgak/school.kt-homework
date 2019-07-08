@@ -49,6 +49,7 @@
   max-width: var(--agenda--item--max-width);
   transform: translateY(100px);
   transition: transform 1s;
+  transition-timing-function: ease-out;
 }
 
 .agenda__lections {
@@ -56,7 +57,7 @@
 }
 
 .agenda__personal {
-  transition-delay: 0.1s;
+  transition: transform 1.5s;
 }
 
 .agenda__info--visible {
