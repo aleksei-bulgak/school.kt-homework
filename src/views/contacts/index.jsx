@@ -8,22 +8,21 @@ const Contacts = ({ contactEmail, socialNetworks }) => (
       <h3 className="contacts__title">Контакты</h3>
       <p className="contacts__email">{contactEmail}</p>
       <div className="contacts__social-networks">
-        {
-          socialNetworks.map(network => (
-            <div
-              key={network.class}
-              className={`${network.class} contacts__social-networks_item`}
-            >
-              {/* eslint-disable-next-line */}
-              <a
-                href={network.link}
-                className={`fa fa-${network.class}`}
-                target="_blank"
-                rel="noopener noreferrer"
-              />
-            </div>
-          ))
-        }
+        {socialNetworks.map(network => (
+          <a
+            href={network.link}
+            key={network.class}
+            className={`${network.class} contacts__social-networks_item`}
+            style={{
+              backgroundImage: `url(${process.env.PUBLIC_URL}/images/social/${network.class}.svg)`,
+            }}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {/* empty span to turn off alert related to not allowed link tags */}
+            <span />
+          </a>
+        ))}
       </div>
     </div>
   </section>

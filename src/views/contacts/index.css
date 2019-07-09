@@ -29,24 +29,16 @@
 }
 
 .contacts__social-networks_item {
-  padding: 0 1rem;
-}
-
-.contacts__social-networks_item {
-  width: 0.6rem;
-  height: 2.6rem;
-  line-height: 2.6rem;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
   background: #00D692;
   text-align: center;
   margin: 0.5rem;
-}
-
-.fa {
-  font-size: 0.8rem;
-  text-align: center;
-  text-decoration: none;
-  color: white;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
 }
 
 @media only screen and (max-width: 700px) {
