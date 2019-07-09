@@ -13,15 +13,17 @@ branches:
 install:
   - npm install
 
-script:
-  - npm run lint
-  - npm run build
-
-deploy:
-  local-dir: ./build
-  provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN
-  keep-history: true
-  on:
-    branch: site
+jobs:
+  include:
+    - stage: lint
+      script: npm run lint
+    - stage: build
+      script: npm run build
+      deploy:
+        local-dir: ./build
+        provider: pages
+        skip-cleanup: true
+        github-token: $GITHUB_TOKEN
+        keep-history: true
+        on:
+          branch: site
