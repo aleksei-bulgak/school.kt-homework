@@ -11,7 +11,7 @@ branches:
     - task
 
 install:
-  - npm install
+  - npm ci
 
 jobs:
   include:
